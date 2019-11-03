@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  letter-spacing: 0.25ch;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+header,
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.3ch;
+}
+.container {
+  width: 90%;
+  height: calc(100vh - 22rem);
+  margin: 5rem auto;
+}
+.msg {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  background: #eee;
+}
+.input-container {
+  background: #eee;
+  padding: 2rem 0;
+}
+.input-box {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+input {
+  width: 100%;
+  border-bottom: 2px solid #555;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.1ch;
+  background: transparent;
+}
+
+form .btn {
+  width: fit-content;
+  padding: 0.75rem 4rem;
+}
+.btn {
+  background: #cccccc;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  letter-spacing: 0.2ch;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 11rem;
+}
+footer p {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.3ch;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 60%;
+  }
+  .input-box {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 50%;
+  }
+  .input-box {
+    width: 70rem;
+  }
+}
