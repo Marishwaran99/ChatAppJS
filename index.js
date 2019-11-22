@@ -10,7 +10,6 @@ var server = app.listen(PORT, () => {
 app.use(express.static("public"));
 var io = socketio(server);
 io.on("connection", socket => {
-  console.log("made connection", socket.id);
   socket.on("chat", function(data) {
     io.sockets.emit("chat", data);
   });
